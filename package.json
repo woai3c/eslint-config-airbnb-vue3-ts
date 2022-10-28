@@ -20,7 +20,7 @@
     "typescript"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/woai3c/eslint-config-airbnb-vue3-ts/issues"
   },
