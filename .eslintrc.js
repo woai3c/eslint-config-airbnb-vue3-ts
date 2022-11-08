@@ -74,6 +74,8 @@ module.exports = {
         'vue/multi-word-component-names': 'off',
         '@typescript-eslint/no-non-null-assertion': 'off',
         'semi-style': ['error', 'first'],
+        '@typescript-eslint/ban-ts-comment': 'off',
+        '@typescript-eslint/consistent-type-imports': 'error',
         'vue/singleline-html-element-content-newline': 'off',
         'vue/v-on-event-hyphenation': [
             'warn',
