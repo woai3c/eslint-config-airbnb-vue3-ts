@@ -77,6 +77,8 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'off',
         '@typescript-eslint/consistent-type-imports': 'error',
         'vue/singleline-html-element-content-newline': 'off',
+        'lines-between-class-members': 'off',
+        'no-return-assign': 'off',
         'vue/v-on-event-hyphenation': [
             'warn',
             'never',
