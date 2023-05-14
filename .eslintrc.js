@@ -6,7 +6,6 @@ module.exports = {
         'plugin:prettier/recommended',
     ],
     plugins: ['@typescript-eslint', 'prettier'],
-    parser: 'vue-eslint-parser',
     parserOptions: {
         parser: '@typescript-eslint/parser',
         ecmaVersion: 'latest',
@@ -86,6 +85,33 @@ module.exports = {
         'vue/singleline-html-element-content-newline': 'off',
         'lines-between-class-members': 'off',
         'no-return-assign': 'off',
+        'vue/v-on-event-hyphenation': [
+            'warn',
+            'never',
+            {
+                autofix: true,
+                ignore: [],
+            },
+        ],
+        'vue/attribute-hyphenation': [
+            'warn',
+            'never',
+            {
+                ignore: [],
+            },
+        ],
+        'vue/html-self-closing': [
+            'error',
+            {
+                html: {
+                    void: 'always',
+                    normal: 'never',
+                    component: 'always',
+                },
+                svg: 'always',
+                math: 'always',
+            },
+        ],
     },
     overrides: [
         {
