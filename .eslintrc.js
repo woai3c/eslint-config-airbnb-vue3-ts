@@ -3,24 +3,32 @@ module.exports = {
         'plugin:@typescript-eslint/recommended',
         'plugin:vue/vue3-recommended',
         'airbnb-base',
+        'plugin:prettier/recommended',
     ],
-    plugins: ['@typescript-eslint'],
+    plugins: ['@typescript-eslint', 'prettier'],
     parser: 'vue-eslint-parser',
     parserOptions: {
         parser: '@typescript-eslint/parser',
         ecmaVersion: 'latest',
     },
     rules: {
+        'prettier/prettier': [
+            'error',
+            {
+                singleQuote: true,
+                semi: false,
+                printWidth: 120,
+                tabWidth: 4,
+                useTabs: false,
+                jsxSingleQuote: false,
+            },
+        ],
         'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
         'no-console': 'off',
         'no-bitwise': 'off',
-        'no-tabs': 'off',
         'array-element-newline': ['error', 'consistent'],
-        indent: ['error', 4, { MemberExpression: 0, SwitchCase: 1, ignoredNodes: ['TemplateLiteral'] }],
         quotes: ['error', 'single'],
-        'comma-dangle': ['error', 'always-multiline'],
         'object-curly-spacing': ['error', 'always'],
-        'max-len': ['error', 120],
         'no-new': 'off',
         'linebreak-style': 'off',
         'import/extensions': 'off',
@@ -29,7 +37,6 @@ module.exports = {
         'no-unused-vars': 'warn',
         'import/no-cycle': 'off',
         'arrow-parens': 'off',
-        semi: ['error', 'never'],
         eqeqeq: 'off',
         'no-param-reassign': 'off',
         'import/prefer-default-export': 'off',
@@ -79,39 +86,6 @@ module.exports = {
         'vue/singleline-html-element-content-newline': 'off',
         'lines-between-class-members': 'off',
         'no-return-assign': 'off',
-        'vue/v-on-event-hyphenation': [
-            'warn',
-            'never',
-            {
-                autofix: true,
-                ignore: [],
-            },
-        ],
-        'vue/attribute-hyphenation': [
-            'warn',
-            'never',
-            {
-                ignore: [],
-            },
-        ],
-        'vue/html-indent': ['error', 4],
-        'vue/max-attributes-per-line': ['warn', {
-            singleline: {
-                max: 3,
-            },      
-            multiline: {
-                max: 1,
-            },
-        }],
-        'vue/html-self-closing': ['error', {
-            html: {
-                void: 'always',
-                normal: 'never',
-                component: 'always',
-            },
-            svg: 'always',
-            math: 'always',
-        }],
     },
     overrides: [
         {
