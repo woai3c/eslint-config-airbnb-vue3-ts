@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-airbnb-vue3-ts",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "[airbnb](https://github.com/airbnb/javascript) 风格规范的 eslint 配置，适用于 vue3 + ts 项目。",
   "main": "index.js",
   "exports": {
@@ -33,14 +33,12 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.6.0",
+    "prettier": "npm:@btmills/prettier@^2.8.8",
     "vue-eslint-parser": "^9.1.0"
   },
   "peerDependencies": {
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.6.0",
     "vue-eslint-parser": "^9.1.0"
-  },
-  "devDependencies": {
-    "prettier": "npm:@btmills/prettier@^2.8.8"
   }
 }
