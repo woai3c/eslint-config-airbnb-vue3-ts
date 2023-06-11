@@ -35,7 +35,6 @@ module.exports = {
         'import/extensions': 'off',
         'eol-last': 'off',
         'no-shadow': 'off',
-        'no-unused-vars': 'warn',
         'import/no-cycle': 'off',
         'arrow-parens': 'off',
         eqeqeq: 'off',
@@ -87,6 +86,8 @@ module.exports = {
         'vue/singleline-html-element-content-newline': 'off',
         'lines-between-class-members': 'off',
         'no-return-assign': 'off',
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': ['warn'],
         'vue/v-on-event-hyphenation': [
             'warn',
             'never',
