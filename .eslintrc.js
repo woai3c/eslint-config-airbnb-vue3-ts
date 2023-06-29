@@ -88,6 +88,7 @@ module.exports = {
         'no-return-assign': 'off',
         'no-unused-vars': 'off',
         '@typescript-eslint/no-unused-vars': ['warn'],
+        'vue/component-definition-name-casing': 'off',
         'vue/v-on-event-hyphenation': [
             'warn',
             'never',
