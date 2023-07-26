@@ -1,5 +1,5 @@
 # eslint-config-airbnb-vue3-ts
-结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 js、ts 项目，兼容 vue3。
+结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 vue3、js、ts 项目。
 
 ## 使用
 ```
