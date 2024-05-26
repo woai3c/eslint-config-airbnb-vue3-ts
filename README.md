@@ -69,3 +69,5 @@ module.exports = {
 所以在 eslint 只保留了代码错误的检查，代码格式化的工作需要使用 vsocde + prettier 插件来完成。但是这只会在保存代码的时候格式化代码，不会在提交代码的时候格式化代码。
 
 所以需要配置 ci/cd 工具来在提交代码的时候格式化代码，例如可以使用 `lint-staged` + `husky` 来实现。
+
+**PS**：这里提供了一个 [DEMO](https://github.com/impact-camp/easy-lowcode) 以供参考，如果你觉得配置不生效或者出错了，可以参考这个示例。
