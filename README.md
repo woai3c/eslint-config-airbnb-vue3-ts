@@ -20,9 +20,11 @@ module.exports = {
   },
   extends: ['eslint-config-airbnb-vue3-ts'],
   rules: {
-    // nestjs 请关闭以下两个规则，避免造成程序报错
+    // nestjs 请关闭以下规则，避免造成程序报错
     // '@typescript-eslint/consistent-type-imports': 'off',
     // 'no-empty-function': 'off',
+    // 'no-useless-constructor': 'off',
+    // 'max-classes-per-file': 'off',
   },
 }
 ```
