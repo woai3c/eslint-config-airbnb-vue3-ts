@@ -18,7 +18,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['eslint-prettier-config-airbnb-ts'],
+  extends: ['./node_modules/eslint-prettier-config-airbnb-ts'],
   rules: {
     // nestjs 请关闭以下规则，避免造成程序报错
     // '@typescript-eslint/consistent-type-imports': 'off',
