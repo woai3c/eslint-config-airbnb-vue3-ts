@@ -1,10 +1,5 @@
 module.exports = {
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-recommended',
-    'airbnb-base',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:@typescript-eslint/recommended', 'airbnb-base', 'plugin:prettier/recommended'],
   plugins: ['@typescript-eslint', 'prettier'],
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -30,7 +25,6 @@ module.exports = {
     'global-require': 'off',
     'no-prototype-builtins': 'off',
     'consistent-return': 'off',
-    'vue/require-component-is': 'off',
     'prefer-template': 'off',
     'one-var': 'off',
     'import/named': 'off',
@@ -46,7 +40,6 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'no-case-declarations': 'off',
-    'vue/valid-v-for': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'no-empty': 'off',
@@ -55,47 +48,17 @@ module.exports = {
     '@typescript-eslint/ban-types': 'off',
     'class-methods-use-this': 'off',
     'no-return-await': 'off',
-    'vue/multi-word-component-names': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/consistent-type-imports': 'error',
-    'vue/singleline-html-element-content-newline': 'off',
     'lines-between-class-members': 'off',
     'no-return-assign': 'off',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['warn'],
-    'vue/component-definition-name-casing': 'off',
-    'vue/v-on-event-hyphenation': [
-      'warn',
-      'never',
-      {
-        autofix: true,
-        ignore: [],
-      },
-    ],
-    'vue/attribute-hyphenation': [
-      'warn',
-      'never',
-      {
-        ignore: [],
-      },
-    ],
-    'vue/html-self-closing': [
-      'error',
-      {
-        html: {
-          void: 'always',
-          normal: 'never',
-          component: 'always',
-        },
-        svg: 'always',
-        math: 'always',
-      },
-    ],
   },
   overrides: [
     {
-      files: ['*.ts', '*.tsx', '*.vue'],
+      files: ['*.ts', '*.tsx'],
       rules: {
         'no-undef': 'off',
       },

@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-airbnb-vue3-ts",
-  "version": "0.3.0",
-  "description": "结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 vue3、js、ts 项目。",
+  "name": "eslint-prettier-config-airbnb-ts",
+  "version": "0.1.0",
+  "description": "结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 js、ts 项目。",
   "main": "index.js",
   "exports": {
     ".": "./index.js"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/woai3c/eslint-config-airbnb-vue3-ts.git"
   },
   "keywords": [
-    "vue",
+    "prettier",
     "eslint",
     "airbnb",
     "typescript"
@@ -36,8 +36,6 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-vue": "^9.26.0",
-    "prettier": "npm:@btmills/prettier@^3.2.5",
-    "vue-eslint-parser": "^9.4.2"
+    "prettier": "npm:@btmills/prettier@^3.2.5"
   }
 }

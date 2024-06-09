@@ -1,11 +1,11 @@
-# eslint-config-airbnb-vue3-ts
+# eslint-prettier-config-airbnb-ts
 
-结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 vue3、js、ts 项目。
+结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 js、ts 项目。
 
 ## 使用
 
 ```
-npm i -D eslint-config-airbnb-vue3-ts
+npm i -D eslint-prettier-config-airbnb-ts
 ```
 
 配置 `.eslintrc.js` 文件：
@@ -18,11 +18,13 @@ module.exports = {
     node: true,
     es6: true,
   },
-  extends: ['eslint-config-airbnb-vue3-ts'],
+  extends: ['eslint-prettier-config-airbnb-ts'],
   rules: {
-    // nestjs 请关闭以下两个规则，避免造成程序报错
+    // nestjs 请关闭以下规则，避免造成程序报错
     // '@typescript-eslint/consistent-type-imports': 'off',
     // 'no-empty-function': 'off',
+    // 'no-useless-constructor': 'off',
+    // 'max-classes-per-file': 'off',
   },
 }
 ```
@@ -60,7 +62,7 @@ module.exports = {
 
 ```json
 {
-  "recommendations": ["Vue.volar", "dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+  "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
 }
 ```
 
