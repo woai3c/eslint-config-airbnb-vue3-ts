@@ -36,7 +36,6 @@ module.exports = {
     'import/named': 'off',
     'default-case': 'off',
     'import/order': 'off',
-    'func-names': 'off',
     radix: 'off',
     'no-unused-expressions': 'off',
     'no-underscore-dangle': 'off',
