@@ -1,6 +1,6 @@
 {
   "name": "eslint-prettier-config-airbnb-ts",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 js、ts 项目。",
   "main": "index.js",
   "exports": {
