@@ -2,6 +2,8 @@
 
 结合了 [airbnb](https://github.com/airbnb/javascript) 和 [prettier](https://prettier.io/) 风格规范的 eslint 配置，适用于 vue3、js、ts 项目。
 
+非 vue 项目可以使用这个插件 [eslint-prettier-config-airbnb-ts](https://github.com/woai3c/eslint-config-airbnb-vue3-ts/tree/no-vue)
+
 ## 使用
 
 ```
